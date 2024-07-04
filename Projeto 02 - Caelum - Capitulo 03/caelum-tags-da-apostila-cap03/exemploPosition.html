@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/exemploPosition.css">
+        <title>Exemplo de Position</title>
+    </head>
+    <body>
+        <div class="quadrado"></div>
+        <div class="quadrado absoluto"></div>
+        <div class="quadrado relativo"></div>
+    </body>
+</html>
+
+<!--
+     STATIC
+     - Sua posição é dada automaticamente pelo 
+       fluxo da página: por padrão ele é renderizado logo após seus irmãos 
+     - Não aceita um posicionamento manual(left,right,top,bottom) 
+     - O tamanho do seu elemento pai leva em conta o tamanho do elemento static
+     
+     RELATIVE
+     - Por padrão o elemento será renderizado da mesma maneira que o static
+     - Aceita posicionamento manual
+     - O tamanho do seu elemento pai leva em conta o tamanho do elemento relative, 
+       porém sem levar em conta seu posicionamento. O pai não sofreria alterações 
+       mesmo se o elemnto fosse static.
+
+     FIXED
+     -Uma configuração de posicionamento vertical(left ou right) 
+      e uma horizontal(top ou bottom) é obrigatória.
+
+     ABSOLUTE
+     - Uma configuração de posicionamento vertical(left ou right) 
+       e uma horizontal (top ou bottom) é obrigatória
+     - O elemento será renderizado na posição indicada, porém relativa 
+       ao primeiro elemento pai cujo position seja diferente de static ou 
+       se não existir este pai, relativa à página
+     - Seu tamanho não conta para calcular o tamanho do elemento pai
+-->
