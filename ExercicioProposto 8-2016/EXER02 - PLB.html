@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 02 - Aula de 18/08/2016</title>
+<style>
+
+table
+{
+border-color: dodgerblue;
+border-style: solid;
+border-width: 5px;
+height: 300px;
+width: 300px;
+text-align: center;
+vertical-align: middle;
+}
+
+body
+{
+font-family: Arial;
+font-size: 36px;
+}
+</style>
+</head>
+
+<body>
+<center>
+<br> Exercício 02 <br><br>
+<table border="1">
+<script lang="Javasricpt">
+
+    var linhas,colunas,i, x;
+
+    do
+{
+        linhas = parseInt(window.prompt("Digite a quantidade de linhas da tabela: "));
+        colunas = parseInt(window.prompt("Digite a quantidade de colunas da tabela: "));
+
+} while (colunas > 10 || linhas > 10 || colunas< 0 || linhas < 0);
+
+for (i = 1; i <= linhas; i++)
+{
+    document.write("<tr>");
+
+    for (x = 1; x <= colunas; x++)
+    {
+        document.write("<td>" + x + "," + i + "</td>");
+    }
+
+    document.write("</tr>");
+}
+
+</script>
+
+</table>
+
+</center>
+
+</body>
+
+</html>

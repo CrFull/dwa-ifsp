@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 02 - Aula de 18/08/2016</title>
+<style>
+
+table
+{
+border-collapse: collapse;
+font-family: Arial;
+font-size: 20px;
+}
+
+body
+{
+font-family: Arial;
+font-size: 36px;
+}
+
+td
+{
+width:70px;
+height: 50px;
+text-align: center;
+vertical-align: middle;
+}
+
+td.legenda
+{
+width: 200px;
+}
+
+td.certo
+{
+background-color: black;
+color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+ <center>
+
+<br> Exercício 03 <br><br>
+
+<table border="1">
+
+<script lang="Javascript">
+
+    var num, par, primo = 1;
+
+    do
+      {
+        num = parseInt(window.prompt("Digite um número: "));
+
+      } while (num <= 0);
+
+    if (num % 2 == 0)
+    {
+        par = 0;
+    }
+
+    if (par == 0)
+    {
+    document.write("<tr><td class='legenda'> Número Par </td>");
+    document.write("<td class='certo'> SIM </td>");
+    document.write("<td> NÃO </td> </tr>")
+    }
+
+    else
+    {
+    document.write("<tr><td class='legenda'> Número Par </td>");
+    document.write("<td> SIM </td>");
+    document.write("<td class='certo'> NÃO </td></tr>")
+    }
+
+    for (var i = 2; i < num; i++)
+    {
+        if (num % i == 0)
+        {
+        primo = 0;
+        break
+        }
+    }
+
+    if (primo == 1)
+    {
+        document.write("<tr><td class='legenda'> Número Primo </td>");
+        document.write("<td class='certo'> SIM </td>");
+        document.write("<td> NÃO </td> </tr>")
+    }
+
+    else
+    {
+        document.write("<tr><td class='legenda'> Número Primo </td>");
+        document.write("<td> SIM </td>");
+        document.write("<td class='certo'> NÃO </td></tr>")
+    }
+
+</script>
+
+</table>
+
+</center>
+
+</body>
+
+</html>

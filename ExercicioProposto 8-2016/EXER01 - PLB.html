@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 01 - Aula de 18/08/2016</title>
+<style>
+td.pa
+{
+color: black;
+background-color: cornflowerblue;
+font-size: 150px;
+text-align: center;
+vertical-align: middle;
+}
+td.pv
+{
+color: black;
+background-color: red;
+font-size: 150px;
+text-align: center;
+vertical-align: middle;
+}
+td.ap
+{
+color: cornflowerblue;
+background-color: black;
+font-size: 150px;
+text-align: center;
+vertical-align: middle;
+}
+td.av
+{
+color: cornflowerblue;
+background-color: red;
+font-size: 150px;
+text-align: center;
+vertical-align: middle;
+}
+td.vp
+{
+color: red;
+background-color: black;
+font-size: 150px;
+text-align: center;
+vertical-align: middle;
+}
+td.va
+{
+color: red;
+background-color: cornflowerblue;
+font-size: 150px;
+text-align: center;
+vertical-align: middle;
+}
+table 
+{
+border-style: solid;
+border-width: 3px;
+border-color: forestgreen;
+text-align: center;
+vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+
+<center>
+
+<table>
+
+<tr>
+
+<td>
+
+<script type="text/javascript">
+
+var nome, cfo, cfu;
+
+
+nome = (window.prompt("Digite uma mensagem:"));
+cfo = (window.prompt("Digite a cor da fonte (1 = Preto, 2 = Azul e 3 = Vermelho"));
+
+cfu = (window.prompt("Digite a cor do fundo (1 = Preto, 2 = Azul e 3 = Vermelho)):"));
+
+if (cfo == 1 && cfu == 2)
+{
+document.write("<table");
+document.write("<tr><td class='pa'> " + nome + "</td></tr>");
+document.write("</table");
+}
+
+else
+
+    if (cfo == 1 && cfu == 3)
+{
+document.write("<table");
+document.write("<tr><td class='pv'> " + nome
++ "</td></tr>")
+document.write("</table");
+}
+
+    else
+
+        if (cfo == 2 && cfu == 1)
+{
+document.write("<table");
+document.write("<tr><td class='ap'> " + nome
++ "</td></tr>")
+document.write("</table");
+}
+
+        else
+
+            if (cfo == 2 && cfu == 3)
+{
+document.write("<table");
+document.write("<tr><td class='av'> "
++ nome + "</td></tr>")
+document.write("</table");
+}
+
+            else
+
+                if (cfo == 3 && cfu == 1)
+{
+document.write("<table");
+document.write("<tr><td class='vp'> " + nome + "</td></tr>")
+document.write("</table");
+}
+
+                else
+{
+document.write("<table");
+document.write("<tr><td class='va'></td></tr>")
+document.write("</table");
+}
+
+</script>
+
+</td>
+
+</tr>
+
+</table>
+
+</center>
+
+</body>
+
+</html>
